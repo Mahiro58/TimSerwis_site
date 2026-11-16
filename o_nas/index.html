@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poznaj Timserwis – autoryzowany dealer Husqvarna w Janowie Lubelskim. 13 lat doświadczenia, pasja do ogrodnictwa i leśnictwa, najlepsze usługi i sprzęt.">
+    <title>TimSerwis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="navbar_logo">
+            <div class="navbar_logo_content">Timserwis
+                <span class="navbar_subtitle">Autoryzowany Dealer Husqvarna</span>
+            </div>
+        </a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="../produkty/index.html" class="navbar_links">Produkty</a>
+            </li>
+            <li class="navbar_item">
+                <a href="../uslugi/index.html" class="navbar_links">Usługi</a>
+            </li>
+            <li class="navbar_item">
+                <a href="https://www.husqvarna.com/pl/poznawaj-i-odkrywaj/aktualne-oferty/" target="_blank" class="navbar_links">Aktualne promocje i oferty</a>
+            </li>
+            <li class="navbar_item">
+                <a href="../o_nas/index.html" class="navbar_links">O nas</a>
+            </li>
+            <li class="navbar_item">
+                <a href="https://maps.app.goo.gl/4zxpoWkNNQdiRsMfA" target="_blank" class="navbar_links">
+                    <span class="gps_box">
+                        <img src="../images/gps_icon.png" alt="GPS" class="gps_icon">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="image_header">
+        <img src="../images/11.webp" alt="Zdjęcie 1">
+        <img src="../images/12.webp" alt="Zdjęcie 2">
+        <img src="../images/13.webp" alt="Zdjęcie 3">
+        <img src="../images/14.webp" alt="Zdjęcie 4">
+        <img src="../images/15.webp" alt="Zdjęcie 5">
+        <img src="../images/16.webp" alt="Zdjęcie 6">
+        <img src="../images/17.webp" alt="Zdjęcie 7">
+    </header>
+    <section class="about-us">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>O nas</h2>
+            <p>
+              Jesteśmy nowym autoryzowanym dealerem marki Husqvarna, specjalizującym się w sprzedaży oraz serwisie sprzętu ogrodniczego, leśnego i budowlanego.
+              Nasze doświadczenie, zdobywane przez ponad <strong>13 lat obecności w branży</strong>, gwarantuje najwyższy poziom obsługi i fachowe doradztwo.
+            </p>
+            <p>
+              W naszej ofercie znajdziesz nowoczesne rozwiązania Husqvarna dopasowane do profesjonalnych oraz amatorskich zastosowań.
+              Stawiamy na indywidualne podejście do każdego klienta, kompleksową obsługę i najwyższą jakość świadczonych usług.
+            </p>
+            <p>
+              Znajdujemy się w dogodnej lokalizacji przy ulicy <strong>14 Czerwca 55 w Janowie Lubelskim</strong> – zapraszamy do odwiedzin i zapoznania się z naszą ofertą w komfortowych warunkach!
+            </p>
+          </div>
+          
+        </div>
+    
+        <div class="about-gallery">
+          <div class="gallery-wrapper">
+            <div class="gallery-slide fade">
+              <img src="../images/img0.jpg" alt="Salon Husqvarna - wejście" onclick="openImageModal(this.src)">
+            </div>
+            <div class="gallery-slide fade">
+              <img src="../images/img1.jpg" alt="Salon Husqvarna - ekspozycja" onclick="openImageModal(this.src)">
+            </div>
+            <div class="gallery-slide fade">
+              <img src="../images/img2.jpg" alt="Salon Husqvarna - ekspozycja" onclick="openImageModal(this.src)">
+            </div>
+            <div class="gallery-slide fade">
+              <img src="../images/img3.jpg" alt="Salon Husqvarna - ekspozycja" onclick="openImageModal(this.src)">
+            </div>
+            <div class="gallery-slide fade">
+              <img src="../images/img4.jpg" alt="Salon Husqvarna - ekspozycja" onclick="openImageModal(this.src)">
+            </div>
+            <div class="gallery-slide fade">
+              <img src="../images/img5.jpg" alt="Salon Husqvarna - ekspozycja" onclick="openImageModal(this.src)">
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- 🔹 Modal do powiększania zdjęcia -->
+    <div id="imageModal" class="image-modal">
+      <span class="close" onclick="closeImageModal()">&times;</span>
+      <img id="modalImage" src="" alt="Powiększone zdjęcie">
+    </div>
+    
+    <!-- 🔹 Skrypt obsługi modala -->
+    <script>
+    function openImageModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImg.src = src;
+    }
+    
+    function closeImageModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
+    
+      
+    <footer class="footer">
+        <p>&copy; 2025 TimSerwis. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
