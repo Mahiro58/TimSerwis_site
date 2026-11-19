@@ -1,0 +1,20 @@
+# Dane dostępowe
+.env
+.env.*
+!.env.example
+
+# Konfiguracja lokalna
+php.ini
+*.log
+
+# Zdjęcia dodawane przez panel administratora
+/uploads/posts/*
+!/uploads/posts/.gitkeep
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Edytor
+.vscode/
+.idea/
